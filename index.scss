@@ -1,0 +1,22 @@
+$button-text-color: white;
+
+.column {
+    width: 30%;
+    margin: 10%;
+    button {
+        border: solid black 1px;
+        color: $button-text-color;
+    }
+}
+
+#red_button {
+    background-color: red;
+}
+
+#green_button {
+    background-color: green;
+}
+
+#blue_button {
+    background-color: blue;
+}
