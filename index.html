@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="index.css">
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script src="firebase_auth.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="column"><button id="red_button">Red Button</button></div>
-    <div class="column"><button id="green_button">Green Button</button></div>
-    <div class="column"><button id="blue_button">Blue Button</button></div>
+    <div class="column"><button id="red_button" onclick="redClicked()">Red Button</button>
+        <p id="red_counter">0</p>
+    </div>
+    <div class="column"><button id="green_button" onclick="greenClicked()">green button</button>
+        <p id="green_counter">0</p>
+    </div>
+    <div class="column"><button id="blue_button" onclick="blueClicked()">blue button</button>
+        <p id="blue_counter">0</p>
+    </div>
+    <p>last button clicked:</p>
+    <p id="last_clicked">None</p>
 </body>
 </html>
